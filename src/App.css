@@ -1,0 +1,45 @@
+/* Global styling: Set the font for the entire app */
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  /* Header styles: Center align, set margin and font size */
+  h1, h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 75px;
+  }
+  
+  /* Adjust font size and margin for h2 */
+  h2 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  
+  /* Buttons section styling: Center buttons and set top margin */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  /* Generic button styling: Style for buttons used in the app */
+  button {
+    background-color: rgb(40, 40, 40);
+    border: none;
+    font-size: 15px;
+    color: whitesmoke;
+    padding: 15px 30px;
+    border-radius: 1000px;
+    margin: 30px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  /* Paragraph styling: Style for paragraphs used in the app */
+  p {
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+    font-weight: 600;
+  }
