@@ -52,6 +52,8 @@ const StopWatch: React.FC = () => {
 
         {/* Button to start/stop the stopwatch */}
         <StopWatchButton buttonFunction={() => setRunning(!running)}>
+
+          {/* If the timer is running, show the text as STOP, otherwise show as START */}
           {running ? 'STOP' : 'START'}
         </StopWatchButton>
 
@@ -81,12 +83,15 @@ const StopWatch: React.FC = () => {
           RESET
         </StopWatchButton>
       </div>
+      
       {/* Display recorded laps */}
       <div className="numbers">
         <h2>Laps:</h2>
         {laps.length == 0 && <p>There are no laps yet.</p>}
+
         {/* Maps through the array laps, creating a new p for every number in the array */}
         {laps.map((lap, index) => (
+
           // Display each lap with a unique key using the index
             <p key={index}>
                 {/* Lap information: Lap number and formatted time */}
